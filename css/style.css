@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background: url(https://img.le-dictionnaire.com/ville-immeubles.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+}
+.titre,
+h1 {
+  margin: auto;
+  text-align: center;
+  color: rgb(199, 199, 193);
+  text-decoration: underline rgb(199, 199, 193);
+  font-size: 6rem;
+}
+ul {
+  list-style: none;
+  display: flex;
+  transition: max-height 0.5s, opacity 0.5s;
+}
+a {
+  display: block;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 1.5rem;
+  right: inherit;
+  color: rgb(199, 199, 193);
+}
+.navbar {
+  position: fixed;
+  right: 10rem;
+  top: 0.2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.menu {
+  display: none;
+  justify-content: flex-end;
+}
+img {
+  width: 4rem;
+  position: absolute;
+  top: 1%;
+  right: 5%;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    color: rgb(199, 199, 193);
+    margin: 0.5rem;
+    display: flex;
+    max-height: 100vh;
+    opacity: 1;
+  }
+  a {
+    font-size: 2rem;
+    text-decoration: none;
+  }
+  ul {
+    display: flex;
+  }
+  img {
+    display: none;
+  }
+}
